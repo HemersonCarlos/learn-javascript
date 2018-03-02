@@ -4,14 +4,71 @@
 
 Exercícios de código para o aprendizado da linguagem JavaScript.
 
+Arquivos dos exercícios:
+
+* **0-index.test.js**: Um hello world básico;
+* **1-numbers.test.js**: Exercícios sobre números;
+* **2-strings.test.js**: Exercícios sobre strings;
+* **3-functions.test.js**: Exercícios sobre funções;
+* **4-arrays.test.js**: Exercícios sobre arrays;
+* **5-objects.test.js**: Exercícios sobre Objetos (dicionários/hash);
+* **6-object-oriented.test.js**: Um exercício sobre orientação a objetos;
+* **7-algorithms.test.js**: Alguns algoritmos que foram apresentados na matéria de estrutura de dados.
+
+Para resolver os exercícios, basta implementar o código onde existir o comentário `// IMPLEMENTE` ou
+colocar a resposta no lugar da constante `RESPOSTA`.
+
+**Exemplo**
+
+Para o código a seguir:
+
+```javascript
+function hello(name) {
+  // IMPLEMENTE
+}
+
+describe('hello', function() {
+  it('deve retornar Hello, Alan!', function() {
+    expect(hello('Alan')).toBe('Hello, Alan!');
+  });
+});
+```
+
+A resposta do exercício deve ser:
+
+```javascript
+function hello(name) {
+  return `Hello, ${name}!`;
+}
+
+describe('hello', function() {
+  it('deve retornar Hello, Alan!', function() {
+    expect(hello('Alan')).toBe('Hello, Alan!');
+  });
+});
+```
+
 ## Dependências
 
-* Node.js
-* Yarn
+Para executar o código precisamos do Node e para instalar as dependências do projeto precisamos do yarn.
+
+* Node.js ([instalação](https://nodejs.org/en/download/))
+* Yarn ([instalação](https://yarnpkg.com/lang/en/docs/install/#windows))
 
 ## Instalação
 
-Instale o Node.js e o Yarn. Abaixo estão instruções de instalação para Linux, macOS e Windows.
+Instale o Node.js e o Yarn como indicado no link. Abaixo estão instruções de instalação para Linux, macOS e Windows.
+
+### Windows
+
+Usando o choco:
+
+```sh
+choco install nodejs.install
+choco install yarn
+```
+
+Siga a [instalação do Node](https://nodejs.org/en/download/)) e ([instalação do Yarn](https://yarnpkg.com/lang/en/docs/install/#windows)).
 
 ### Linux
 
@@ -32,25 +89,51 @@ brew install node
 brew install yarn
 ```
 
-### Windows
+### Verificando a instalação
+
+Verifique se os pacotes foram corretamente instalados, digitando no console:
 
 ```sh
-choco install nodejs.install
-choco install yarn
+node --version
+yarn --version
 ```
 
-### Instalação das dependências
+## Instalação das dependências para realização das atividades
+
+Clone o projeto na sua máquina local. Substitua nos comandos abaixo `<USUARIO>` pelo seu usuário no github.
 
 ```sh
-cd javascript-katas
+git clone https://github.com/catolicasc-mobile/javascript-katas-<USUARIO>.git
+```
+
+Acesse a pasta do projeto:
+
+```sh
+cd javascript-katas-<USUARIO>
+```
+
+Instale o Jest para executar os testes unitários:
+
+```sh
 yarn global add jest
+```
+
+Instale as dependências do projeto executando o comando yarn:
+
+```sh
 yarn
 ```
 
 ## Testes
 
-Para executar os testes, execute:
+Para executar os testes unitários, execute:
 
 ```sh
 jest
+```
+
+Você também pode manter o jest rodando no console enquanto edita o código:
+
+```sh
+jest --watch
 ```
