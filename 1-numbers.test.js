@@ -1,16 +1,18 @@
 // Substituia RESPOSTA pela resposta correta
 
-describe('typeof', function() {
+describe('typeof', function() { // describe - começa um bloco de teste....
   function typeOf(item) {
     // IMPLEMENTE
+    return typeof item;
   }
 
-  it('typeof integer', function() {
+  it('typeof integer', function() { // Cada it é uma parte que eu quero testar....
     expect(typeOf(10)).toBe('number');
   });
 
   it('typeof float', function() {
-    expect(typeOf(10.0)).toBe('float');
+    //expect(typeOf(10.0)).toBe('float');
+    expect(typeOf(10.0)).toBe('number');
   });
 
   it('typeof string', function() {
@@ -18,48 +20,66 @@ describe('typeof', function() {
   });
 });
 
+//---------------------------------------------------
+
 describe('adição', function() {
   it('retorna o valor da adição de inteiros', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    const value = 2; // IMPLEMENTE
     expect(value + 5).toBe(7);
   });
 
   it('retorna o valor da adição de floats', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    const value = 3.141; // IMPLEMENTE
     expect(value + 1.0).toBe(4.141);
   });
 
   it('retorna o valor da "adição" entre uma string e um inteiro', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    const value = '1'; // IMPLEMENTE
     expect(value + 1).toBe('11');
   });
 
   it('retorna o valor da "adição" entre uma string e um float', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    const value = '1'; // IMPLEMENTE
     expect(value + 1.1).toBe('11.1');
   });
 });
 
+
+//---------------------------------------------------------
+
+
 describe('subtração', function() {
   it('retorna o valor da subtração de inteiros', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    const value = 2; // IMPLEMENTE
     expect(value - 5).toBe(-3);
   });
 
   it('retorna o valor da subtração de floats', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    const value = 4.141; // IMPLEMENTE
     expect(value - 1.0).toBe(3.141);
   });
 
   it('retorna o valor da "subtração" entre uma string e um inteiro', function() {
-    const value = RESPOSTA; // IMPLEMENTE
+    //const value = RESPOSTA; // IMPLEMENTE
+    //const value = -1; // IMPLEMENTE
+    const value = -'1'; // IMPLEMENTE
     expect(value + 1).toBe(0);
   });
 });
 
+//-------------------------------------------------------
+
+
 describe('módulo', function() {
   it('retorna o valor do módulo', function() {
-    const result = 10 % RESPOSTA; // IMPLEMENTE
+    //const result = 10 % RESPOSTA; // IMPLEMENTE
+    //const result = 10 % 3; // IMPLEMENTE
+    const result = 10 % 9; // IMPLEMENTE
     expect(result).toBe(1);
   });
 });
@@ -71,6 +91,7 @@ describe('desafio', function() {
       result = result + i;
     }
 
-    expect(result).toBe(RESPOSTA); // IMPLEMENTE
+    //expect(result).toBe(RESPOSTA); // IMPLEMENTE
+    expect(result).toBe(15); // IMPLEMENTE
   });
 });

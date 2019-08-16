@@ -6,17 +6,19 @@
   "repository": "git@github.com:catolicasc-mobile/javascript-katas.git",
   "author": "Alan R. Fachini <alan.fachini@catolicasc.org.br>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "global": "^4.4.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "jest": "^22.4.2",
+    "jest": "^22.4.4",
     "regenerator-runtime": "^0.11.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --env=node"
   }
 }

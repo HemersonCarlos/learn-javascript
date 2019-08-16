@@ -1,31 +1,35 @@
 describe('string', function() {
   it('retorna o tamanho de uma string', function() {
     const str = 'teste';
-    expect(RESPOSTA).toBe(5); // IMPLEMENTE
+    //expect(RESPOSTA).toBe(5); // IMPLEMENTE
+    expect(str.length).toBe(5); // IMPLEMENTE
   });
+
 
   it('retorna o segundo char de uma string', function() {
     const str = 'abcde';
-    expect(RESPOSTA).toBe('b'); // IMPLEMENTE
+    expect(str[1]).toBe('b'); // IMPLEMENTE
   });
+
 
   it('retorna o os 5 primeiros chars de uma string', function() {
     const str = 'abcdefghi';
-    expect(RESPOSTA).toBe('abcde'); // IMPLEMENTE
+    expect(str.slice(0,5)).toBe('abcde'); // IMPLEMENTE
   });
+
 
   it('retorna a concatenação de duas strings', function() {
     const str_one = 'Hello';
     const str_two = ' World!';
 
-    expect(RESPOSTA).toBe('Hello World!'); // IMPLEMENTE
+    expect(str_one + str_two).toBe('Hello World!'); // IMPLEMENTE
   });
 
   it('retorna a interpolação de duas strings', function() {
     const str_one = 'Hello';
     const str_two = 'World';
 
-    expect(RESPOSTA).toBe('Hello World!'); // IMPLEMENTE
+    expect(`${str_one} `+`${str_two}!`).toBe('Hello World!'); // IMPLEMENTE
   });
 
   it('replace uma parte da string', function() {
