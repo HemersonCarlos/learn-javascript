@@ -24,6 +24,7 @@ describe('typeof', function() { // describe - começa um bloco de teste....
 
 describe('adição', function() {
   it('retorna o valor da adição de inteiros', function() {
+    //const value = RESPOSTA; // IMPLEMENTE
     const value = 2; // IMPLEMENTE
     expect(value + 5).toBe(7);
   });
